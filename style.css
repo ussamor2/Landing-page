@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html{
+    background-color: black;
+}
+
 body {
     min-height: 100vh;
     max-width: 1200px;
@@ -16,9 +20,12 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: white;
 }
 
-.header, .hero, .content, .footer {
+.header,
+.hero,
+.footer {
     padding: 0 100px 0 100px;
 }
 
@@ -38,7 +45,8 @@ img {
     min-width: 50%;
 }
 
-.header, .hero {
+.header,
+.hero {
     background-color: #1F2937;
 }
 
@@ -85,15 +93,15 @@ img {
     background-color: #3882F6;
     padding: 5px 20px 5px 20px;
     border-radius: 8px;
-    color: #F9FAF8; 
+    color: #F9FAF8;
     font-weight: bold;
-    margin-top: 8px;   
+    margin-top: 8px;
 }
 
 .hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .hero-sec-text {
@@ -105,9 +113,92 @@ img {
     flex: 1;
 }
 
-.footer {
-    flex: 0 1 auto;
+.content-header {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 60px;
+}
 
+.item-one,
+.item-two,
+.item-three,
+.item-four {
+    width: 180px;
+    text-align: center;
+}
 
+.info-container div img {
+    max-width: 250px;
+    min-width: 50px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    padding: 60px 200px 60px 200px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.author {
+    text-align: end;
+    font-weight: bold;
+}
+
+.call-container {
+    background-color: #3882F6;
+    margin: 60px 200px 60px 200px;
+    border-radius: 8px;
+    padding: 30px 60px 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-title {
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bolder;
+}
+
+.call-subtext {
+    font-size: 14px;
+    color: #E5E7EB;
+}
+
+.call-container button {
+    background-color: #3882F6;
+    padding: 5px 20px 5px 20px;
+    border-radius: 8px;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.footer {
+    flex: 0 1 auto;
+    background-color: #1F2937;
+    text-align: center;    
+    font-size: 14px;
+    color: #E5E7EB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
